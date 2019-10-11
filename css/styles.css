@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
+
+@font-face {
+    font-family: misoregular;
+    src: url('../fonts/miso-webfont.woff2') format('woff2'),
+         url('../fonts/miso-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+:root {
+	--font-text: "Lucida Sans Unicode",sans-serif; 
+	--font-title: "Lucida Grande", sans-serif;
+  }
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+body {
+	background: #fdde7e;
+	position: relative;
+	/* display: flex;
+	align-items: center; */
+}
+/* Main Styles */
+.container {
+	position: absolute;
+	top:0;
+	left:0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	max-width: 1140px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.coffe-offer {
+	width: 31.5%;
+	background: white;
+	text-align: center;
+	padding: 45px 0;
+	cursor: pointer;
+	border-radius: 5px;
+	box-shadow: 1px 2px 0 0 rgba(0, 0, 0, .2);
+}
+
+.coffe-offer:hover {
+	padding: 60px 0;
+}
+
+.coffe-price {
+	font-family: misoregular,sans-serif;
+	font-size: 70px;
+	color: #02995b;
+	font-weight: bold;
+	padding-bottom: 25px;
+}
+
+.coffe-images-wraper,
+.coffe-title {
+	padding-bottom: 40px;
+}
+
+.coffe-title {
+	font-family: misoregular,sans-serif;
+	font-size: 56px;
+}
+.coffe-desc {
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	display: flex;
+    flex-direction: column;
+}
